@@ -10,3 +10,8 @@
 📜  Certifications<br /><br />
 ![정보처리기사](https://img.shields.io/badge/정보처리기사-blue?style=for-the-badge)
 ![빅데이터분석기사](https://img.shields.io/badge/빅데이터분석기사-FF6B35?style=for-the-badge)
+
+
+📬 Contact<br /><br />
+[![Gmail](https://img.shields.io/badge/dlrlwms11@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dlrlwms11@gmail.com)
+[![Tistory](https://img.shields.io/badge/공부블로그-FF5A00?style=for-the-badge&logo=tistory&logoColor=white)](https://myblog73329.tistory.com/)
