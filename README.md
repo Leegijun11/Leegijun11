@@ -7,4 +7,4 @@
 <br />
 
 📜  Certifications<br /><br />
-![정보처리기사](https://img.shields.io/badge/)
+![정보처리기사](https://img.shields.io/badge/정보처리기사-blue?style=for-the-badge)
