@@ -7,5 +7,4 @@
 <br />
 
 📜  Certifications<br /><br />
-![정보처리기사](https://img.shields.io/badge/정보처리기사-passing-brightgreen)
-
+(https://img.shields.io/badge/정보처리기사-취득-blue)
