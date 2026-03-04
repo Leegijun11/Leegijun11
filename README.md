@@ -12,7 +12,7 @@
 ![빅데이터분석기사](https://img.shields.io/badge/빅데이터분석기사-FF6B35?style=for-the-badge)
 
 
-📬 Contact<br /><br />
+📬 Contact<br />
 > Tistory : [개발자 이기준 블로그](https://myblog73329.tistory.com/)
 > 
 > Email : <dlrlwms11@gmail.com>
