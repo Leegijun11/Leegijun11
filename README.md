@@ -13,12 +13,12 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 <br /><br />
 
-🛠️ Tools<br /><br />
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
 📜 Certifications<br /><br />
 ![정보처리기사](https://img.shields.io/badge/정보처리기사-blue?style=for-the-badge)
 ![빅데이터분석기사](https://img.shields.io/badge/빅데이터분석기사-FF6B35?style=for-the-badge)
+
+🛠️ Tools<br /><br />
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 
 📬 Contact<br />
