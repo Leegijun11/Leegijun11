@@ -13,5 +13,5 @@
 
 
 📬 Contact<br /><br />
-[![Gmail](https://img.shields.io/badge/dlrlwms11@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dlrlwms11@gmail.com)
-[![Tistory](https://img.shields.io/badge/공부블로그-FF5A00?style=for-the-badge&logo=tistory&logoColor=white)](https://myblog73329.tistory.com/)
+[![Gmail](https://img.shields.io/badge/dlrlwms11@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dlrlwms11@gmail.com)<br/>
+[![Tistory](https://img.shields.io/badge/개발자 이기준의 공부 블로그-FF5A00?style=for-the-badge&logo=tistory&logoColor=white)](https://myblog73329.tistory.com/)
