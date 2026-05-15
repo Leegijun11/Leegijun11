@@ -7,11 +7,12 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 <br /><br />
 
-🎨 Frontend<br /><br />
+🎨 Frontend & State Management<br /><br />
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 <br /><br />
 
 ⚙️ Backend & Database<br /><br />
@@ -30,7 +31,6 @@
 
 📜 Certifications<br /><br />
 ![정보처리기사](https://img.shields.io/badge/정보처리기사-blue?style=for-the-badge)
-<br />
 
 📬 Contact<br />
 > Tistory : [개발자 이기준 블로그](https://myblog73329.tistory.com/)
