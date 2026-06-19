@@ -23,6 +23,7 @@
 🐳 DevOps & OS<br /><br />
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
 <br /><br />
 
 🛠️ Tools<br /><br />
@@ -31,6 +32,7 @@
 
 📜 Certifications<br /><br />
 ![정보처리기사](https://img.shields.io/badge/정보처리기사-blue?style=for-the-badge)
+![SQLD](https://img.shields.io/badge/SQLD-blue?style=for-the-badge)
 
 📬 Contact<br />
 > Tistory : [개발자 이기준 블로그](https://myblog73329.tistory.com/)
