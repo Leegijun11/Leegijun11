@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Lee%20Gi%20Jun&desc=AI%20Developer&descAlignY=60&descSize=22&animation=fadeIn&fontSize=55)
+![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Lee%20Gi%20Jun&desc=AI%20Engineer&descAlignY=60&descSize=22&animation=fadeIn&fontSize=55)
 
 <hr>
 
