@@ -51,28 +51,37 @@
 
 
 <hr>
+
 🚀 Featured Project<br /><br />
 
 ### 🔵 Stock Battle - 실시간 가상 주식 투자 시뮬레이션 게임 (2026.04.06 ~ 2026.05.08)
+
 <p align="center">
 <img src="https://raw.githubusercontent.com/Leegijun11/IBM-Redhat-6th-midterm-team-project/main/images/trading2.PNG" width = "26%"> <img src="https://raw.githubusercontent.com/Leegijun11/IBM-Redhat-6th-midterm-team-project/main/images/start.PNG" width = "26%"> <img src="https://raw.githubusercontent.com/Leegijun11/IBM-Redhat-6th-midterm-team-project/main/images/myinfo.PNG" width = "26%">
 </p>
 
-**프로젝트 한 줄 소개: 실시간 주가 데이터를 기반으로 한 턴제 가상 투자 게임에서 FE 상태 관리 최적화와 BE 핵심 로직 개발을 담당하였습니다.** <br><br>
+**프로젝트 한 줄 소개: 실시간 주가 데이터를 기반으로 한 턴제 가상 투자 게임에서 FE 상태 관리 최적화와 BE 핵심 로직 개발을 담당하였습니다.**
+
 **GitHub(Repo): https://github.com/Leegijun11/IBM-Redhat-6th-midterm-team-project** <br>
+**회고: https://myblog73329.tistory.com/103**
+
 **🛠Tech🛠**<br>
 FE: <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/Redux%20Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white"> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"> <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
 <br>
 BE: <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"> <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/Alembic-2C3E50?style=for-the-badge">
 <br>
 DB: <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-<br><br>
+
+<br>
 
 ### 🟣 아이 성장 일기 AI (2026.06.10 ~ 2026.08.04)
 
-**프로젝트 한 줄 소개: AI가 아이의 성장 과정을 분석·기록하여 생일마다 "디지털 성장 일기(북)"을 자동 생성해주는 육아 기록 서비스에서 FE 개발과 CI/CD·K8s 기반 배포 인프라 구축을 담당하였습니다.** <br><br>
+**프로젝트 한 줄 소개: AI가 아이의 성장 과정을 분석·기록하여 생일마다 "디지털 성장 일기(북)"을 자동 생성해주는 육아 기록 서비스에서 FE 개발과 CI/CD·K8s 기반 배포 인프라 구축을 담당하였습니다.**
+
 **GitHub(Frontend): https://github.com/Leegijun11/dearbaby-ai-fe** <br>
 **GitHub(Backend/Infra): https://github.com/Leegijun11/k8s_backend_final** <br>
+**회고: https://myblog73329.tistory.com/104**
+
 **🛠Tech🛠**<br>
 FE: <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white">
 <br>
