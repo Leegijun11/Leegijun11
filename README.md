@@ -53,26 +53,35 @@
 <hr>
 🚀 Featured Project<br /><br />
 
-### Stock Battle - 가상 주식 투자 시뮬레이션 게임 (04/06 ~ 05/08)
-실시간 주가 데이터를 기반으로 한 턴제 가상 투자 게임. 고빈도 데이터 업데이트 상황에서의 프론트엔드 성능 최적화와 안정적인 백엔드 데이터 처리에 집중하여 개발했습니다.
+### 🔵 Stock Battle - 실시간 가상 주식 투자 시뮬레이션 게임 (2026.04.06 ~ 2026.05.08)
+<p align="center">
+<img src="https://raw.githubusercontent.com/Leegijun11/IBM-Redhat-6th-midterm-team-project/main/images/trading2.PNG" width = "26%"> <img src="https://raw.githubusercontent.com/Leegijun11/IBM-Redhat-6th-midterm-team-project/main/images/start.PNG" width = "26%"> <img src="https://raw.githubusercontent.com/Leegijun11/IBM-Redhat-6th-midterm-team-project/main/images/myinfo.PNG" width = "26%">
+</p>
 
-**담당**: 프론트엔드 상태 관리 최적화 · 백엔드 핵심 로직 개발 (풀스택)
+**프로젝트 한 줄 소개: 실시간 주가 데이터를 기반으로 한 턴제 가상 투자 게임에서 FE 상태 관리 최적화와 BE 핵심 로직 개발을 담당하였습니다.** <br><br>
+**GitHub(Repo): https://github.com/Leegijun11/IBM-Redhat-6th-midterm-team-project** <br>
+**🛠Tech🛠**<br>
+FE: <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/Redux%20Toolkit-764ABC?style=for-the-badge&logo=redux&logoColor=white"> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"> <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+<br>
+BE: <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"> <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/Alembic-2C3E50?style=for-the-badge">
+<br>
+DB: <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<br><br>
 
-- Redux Toolkit 기반 전역 상태 관리 및 렌더링 최적화
-- FastAPI + SQLAlchemy 기반 RESTful API 설계, 인증/세션 관리
-- Alembic 마이그레이션 도입 및 프로젝트 구조 표준화, 통합 README 작성
+### 🟣 아이 성장 일기 AI (2026.06.10 ~ 2026.08.04)
 
-- [Repo](https://github.com/Leegijun11/IBM-Redhat-6th-midterm-team-project)
-
-<br />
-
-### 아이 성장 일기 AI (06/10 ~ 08/04)
-AI가 아이의 성장 과정을 분석·기록하여, 생일마다 "디지털 성장 일기(북)"을 자동 생성해주는 육아 기록 서비스
-
-**담당**: 프론트엔드 개발 · 백엔드-프론트 연동 · CI/CD 및 K8s 기반 배포 인프라 구축
-
-- Frontend: [dearbaby-ai-fe](https://github.com/Leegijun11/dearbaby-ai-fe)
-- Backend/Infra: [k8s_backend_final](https://github.com/Leegijun11/k8s_backend_final)
-- 프로젝트 회고: 작성 예정
+**프로젝트 한 줄 소개: AI가 아이의 성장 과정을 분석·기록하여 생일마다 "디지털 성장 일기(북)"을 자동 생성해주는 육아 기록 서비스에서 FE 개발과 CI/CD·K8s 기반 배포 인프라 구축을 담당하였습니다.** <br><br>
+**GitHub(Frontend): https://github.com/Leegijun11/dearbaby-ai-fe** <br>
+**GitHub(Backend/Infra): https://github.com/Leegijun11/k8s_backend_final** <br>
+**🛠Tech🛠**<br>
+FE: <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white">
+<br>
+BE: <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"> <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/Starlette-000000?style=for-the-badge">
+<br>
+AI: <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"> <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white">
+<br>
+DB: <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<br>
+Infra/CI-CD: <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"> <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"> <img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white">
 
 <hr>
