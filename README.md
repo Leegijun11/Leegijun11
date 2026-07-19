@@ -53,13 +53,26 @@
 <hr>
 🚀 Featured Project<br /><br />
 
+### Stock Battle - 가상 주식 투자 시뮬레이션 게임
+실시간 주가 데이터를 기반으로 한 턴제 가상 투자 게임. 고빈도 데이터 업데이트 상황에서의 프론트엔드 성능 최적화와 안정적인 백엔드 데이터 처리에 집중하여 개발했습니다.
+
+**담당**: 프론트엔드 상태 관리 최적화 · 백엔드 핵심 로직 개발 (풀스택)
+
+- Redux Toolkit 기반 전역 상태 관리 및 렌더링 최적화
+- FastAPI + SQLAlchemy 기반 RESTful API 설계, 인증/세션 관리
+- Alembic 마이그레이션 도입 및 프로젝트 구조 표준화, 통합 README 작성
+
+- [Repo](https://github.com/Leegijun11/IBM-Redhat-6th-midterm-team-project)
+
+<br />
+
 ### 아이 성장 일기 AI
-AI가 아이의 성장 과정을 분석·기록하여, 생일마다 "디지털 성장 일기"을 자동 생성해주는 육아 기록 서비스
+AI가 아이의 성장 과정을 분석·기록하여, 생일마다 "디지털 성장 일기(북)"을 자동 생성해주는 육아 기록 서비스
 
 **담당**: 프론트엔드 개발 · 백엔드-프론트 연동 · CI/CD 및 K8s 기반 배포 인프라 구축
 
-- 🖥️ Frontend: [dearbaby-ai-fe](https://github.com/Leegijun11/dearbaby-ai-fe)
-- ⚙️ Backend/Infra: [k8s_backend_final](https://github.com/Leegijun11/k8s_backend_final)
-- ✍️ 프로젝트 회고: 작성 예정
+- Frontend: [dearbaby-ai-fe](https://github.com/Leegijun11/dearbaby-ai-fe)
+- Backend/Infra: [k8s_backend_final](https://github.com/Leegijun11/k8s_backend_final)
+- 프로젝트 회고: 작성 예정
 
 <hr>
