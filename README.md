@@ -48,3 +48,18 @@
 > Tistory : [개발자 이기준 블로그](https://myblog73329.tistory.com/)
 >
 > Email : <dlrlwms11@gmail.com>
+
+
+<hr>
+🚀 Featured Project<br /><br />
+
+### 아이 성장 일기 AI
+AI가 아이의 성장 과정을 분석·기록하여, 생일마다 "디지털 성장 일기"을 자동 생성해주는 육아 기록 서비스
+
+**담당**: 프론트엔드 개발 · 백엔드-프론트 연동 · CI/CD 및 K8s 기반 배포 인프라 구축
+
+- 🖥️ Frontend: [dearbaby-ai-fe](https://github.com/Leegijun11/dearbaby-ai-fe)
+- ⚙️ Backend/Infra: [k8s_backend_final](https://github.com/Leegijun11/k8s_backend_final)
+- ✍️ 프로젝트 회고: 작성 예정
+
+<hr>
