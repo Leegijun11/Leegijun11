@@ -100,6 +100,17 @@ Validation: <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the
 
 <hr>
 
+### LLM 기반 QA 데이터 증강 (2026.05.02 ~ 2026.05.21)
+
+**개인 프로젝트 | GPT3Mix 논문(분류 태스크 증강)의 아이디어를 QA 태스크에 응용해, 동일 context에서 다양한 표현의 질문을 GPT-3.5로 생성하여 T5 모델의 정답 예측 성능 개선을 검증한 프로젝트입니다.** KorQuAD 1.0 기반 학습 데이터를 3,000개에서 9,000개로 증강한 결과 EM 10.6→26.2, F1 14.3→32.3으로 향상되었고, 오답 사례 분석을 통해 예측 길이가 정답보다 긴 경향을 발견해 추가 튜닝을 시도했습니다.
+
+**GitHub: https://github.com/Leegijun11/QA-Augmentation** <br>
+
+**Tech**<br>
+<img src="https://img.shields.io/badge/T5-FF6F00?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black">
+
+<hr>
+
 ### EuroSAT 위성 이미지 분류 모델 비교 (2026.06.01 ~ 2026.06.07)
 
 **개인 프로젝트 | 위성 이미지 데이터셋 EuroSAT에서 CNN, Vision Transformer(ViT), MLP-Mixer 세 아키텍처의 분류 성능을 비교한 프로젝트입니다.** 동일 데이터·조건에서 실험한 결과 MLP-Mixer > ViT > CNN 순으로 정확도가 높게 나타났고, 이를 근거로 각 아키텍처가 전역/지역 특징을 다루는 방식의 차이를 분석했습니다.
