@@ -89,7 +89,6 @@ Infra/CI-CD: <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-bad
 - LLM 응답 검증(Pydantic) 및 형식 오류 발생 시 자동 재시도 로직 구현
 
 **GitHub: https://github.com/Leegijun11/Smishing-guard** <br>
-**회고: (블로그 링크)**
 
 **Tech**<br>
 AI: <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"> <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"> <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
