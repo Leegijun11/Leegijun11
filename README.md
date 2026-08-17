@@ -51,6 +51,7 @@ AI 기능(LLM, RAG)을 실제 서비스로 설계하고 배포하는 백엔드 �
 
 
 <hr>
+
 🚀 Featured Project<br /><br />
 
 ###  아이 성장 일기 AI (2026.06.10 ~ 2026.08.04)
@@ -96,6 +97,17 @@ AI: <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&lo
 RAG/DB: <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logoColor=white">
 <br>
 Validation: <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white">
+
+<hr>
+
+### EuroSAT 위성 이미지 분류 모델 비교 (2026.06.01 ~ 2026.06.07)
+
+**개인 프로젝트 | 위성 이미지 데이터셋 EuroSAT에서 CNN, Vision Transformer(ViT), MLP-Mixer 세 아키텍처의 분류 성능을 비교한 프로젝트입니다.** 동일 데이터·조건에서 실험한 결과 MLP-Mixer > ViT > CNN 순으로 정확도가 높게 나타났고, 이를 근거로 각 아키텍처가 전역/지역 특징을 다루는 방식의 차이를 분석했습니다.
+
+**GitHub: https://github.com/Leegijun11/eurosat-cnn-vit-mlp** <br>
+
+**Tech**<br>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
 
 <hr>
 
