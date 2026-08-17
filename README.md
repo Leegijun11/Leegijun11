@@ -77,3 +77,23 @@ DB: <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo
 Infra/CI-CD: <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"> <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"> <img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white">
 
 <hr>
+
+### 스미싱 문자 판별 및 대처 가이드 (2026.07.29 ~ 2026.08.17)
+
+**개인 프로젝트 | BERT로 스미싱 문자 유형을 분류하고, RAG로 검색한 유형별 공식 대처방법을 바탕으로 LLM이 위험도와 행동 가이드를 안내하는 서비스입니다.**
+
+**핵심 구현**
+- BERT 기반 스미싱 유형 분류 모델 학습 및 검증
+- ChromaDB 기반 RAG 파이프라인 설계 및 구현
+- 분류 확신도가 낮은 경우 후보 유형을 함께 검색해 LLM이 최종 판단하도록 하는 로직 설계
+- LLM 응답 검증(Pydantic) 및 형식 오류 발생 시 자동 재시도 로직 구현
+
+**GitHub: https://github.com/Leegijun11/Smishing-guard** <br>
+**회고: (블로그 링크)**
+
+**Tech**<br>
+AI: <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"> <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black"> <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white">
+<br>
+RAG/DB: <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logoColor=white">
+<br>
+Validation: <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white">
