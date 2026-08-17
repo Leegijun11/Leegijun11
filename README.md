@@ -51,7 +51,6 @@ AI 기능(LLM, RAG)을 실제 서비스로 설계하고 배포하는 백엔드 �
 
 
 <hr>
-
 🚀 Featured Project<br /><br />
 
 ###  아이 성장 일기 AI (2026.06.10 ~ 2026.08.04)
@@ -97,3 +96,14 @@ AI: <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&lo
 RAG/DB: <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logoColor=white">
 <br>
 Validation: <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white">
+
+<hr>
+
+### 개발자 번아웃 예측 모델 (2026.05.16 ~ 2026.06.01)
+
+**개인 프로젝트 | 개발자의 업무·생활 습관 데이터를 바탕으로 번아웃 지수(Low/Medium/High)를 예측하는 딥러닝 모델입니다.** 정규화·결측치 처리 방식을 비교 실험하고 SMOTE·파생 변수로 성능 개선을 시도했으며, 최종 정확도(75~80%)의 정체 원인을 혼동 행렬 분석을 통해 모델이 아닌 데이터셋 자체의 한계로 진단했습니다.
+
+**GitHub: https://github.com/Leegijun11/Burnout-Optimization-Lab** <br>
+
+**Tech**<br>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"> <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white">
