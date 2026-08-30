@@ -14,12 +14,18 @@ AI 기능(LLM, RAG)을 실제 서비스로 설계하고 배포하는 백엔드 �
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logoColor=white)
 <br /><br />
 
 ⚙️ Backend<br /><br />
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+<br /><br />
+
+🎨 Frontend<br /><br />
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Axios](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
 <br /><br />
 
 ☁️ Cloud & Infra<br /><br />
@@ -97,6 +103,27 @@ AI: <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&lo
 RAG/DB: <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logoColor=white">
 <br>
 Validation: <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white">
+
+<hr>
+
+### 자취생 요리 추천 (2026.08.18 ~ 2026.08.30)
+
+**개인 프로젝트 | 집에 있는 재료·조리도구와 원하는 요리 종류만 고르면, AI가 만들 수 있는 메뉴를 골라 레시피를 생성하고 스스로 평가까지 해주는 LLM + Multi-Agent 서비스입니다.**
+
+**핵심 구현**
+- 생성 에이전트(요리사)와 평가 에이전트(미식가)를 분리한 Multi-Agent 구조로 LangGraph 기반 State 관리 및 조건부 재생성 사이클 구현
+- 보유 재료·조리도구와 카테고리에 맞는 레시피 후보를 코드로 매칭하고, 부족한 재료는 대체재 테이블로 인정하는 로직 설계
+- 생성된 레시피에 대체재·필수 재료·맵기/굽기 반영 여부를 문자열 검증으로 직접 확인 후 재시도 여부 판단 (미식가 에이전트의 자체 판단에만 의존하지 않도록 설계)
+- LLM에게 맡길 판단(레시피 생성·평가)과 코드로 처리할 로직(재고 대조, 조건 분기, 검증)을 명확히 분리
+
+**GitHub: https://github.com/Leegijun11/home_cook** <br>
+
+**Tech**<br>
+BE: <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<br>
+FE: <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white">
+<br>
+AI/Agent: <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white">
 
 <hr>
 
