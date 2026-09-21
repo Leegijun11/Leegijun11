@@ -11,6 +11,7 @@ AI 기능(LLM, RAG)을 실제 서비스로 설계하고 배포하는 백엔드 �
 <br /><br />
 
 🤖 AI / Machine Learning<br /><br />
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
@@ -38,6 +39,7 @@ AI 기능(LLM, RAG)을 실제 서비스로 설계하고 배포하는 백엔드 �
 
 🛠️ Tools<br /><br />
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 <br /><br />
 
 📜 Certifications<br /><br />
@@ -58,30 +60,34 @@ AI 기능(LLM, RAG)을 실제 서비스로 설계하고 배포하는 백엔드 �
 
 <hr>
 
-🚀 Featured Project<br /><br />
+🚀 Featured Projects<br /><br />
 
-###  아이 성장 일기 AI (2026.06.10 ~ 2026.08.04)
+### HANDOVER — 인수인계 업무보조 챗봇 + 신입 적응도 리포트 (2026.08.31 ~ 2026.09.20)
 
-**프로젝트 한 줄 소개: AI가 아이의 성장 과정을 분석·기록하여 생일마다 "디지털 성장 일기(북)"을 자동 생성해주는 육아 기록 서비스입니다.**
-
-🏆 IBM x RedHat AX Academy 최종 프로젝트 최우수상
+**팀 프로젝트(3인, 팀장) | 인수인계서를 근거로 답하는 RAG 챗봇으로 신입의 반복 질문을 줄이고, 체크리스트 완료를 질문 기록과 교차 검증해 사수에게 신입의 적응도 리포트를 제공하는 서비스입니다.**
 
 **담당 역할 (팀장)**
-- 프로젝트 주제 선정 및 기획 추진
-- 프론트엔드 아키텍처 설계 및 개발
-- 백엔드-프론트엔드 연결 최종 점검 및 트러블슈팅
-- CI/CD·K8s 기반 배포 인프라 구축
+- 데이터 모델·API 명세·프롬프트 브리프를 먼저 확정해 병렬 개발 충돌 최소화
+- 챗봇 RAG, 체크리스트 초안 생성, 적응도 리포트 등 AI 파이프라인 전체 설계·구현
+- 비용·트래픽 방어, 보안 검증, 테스트 코드 담당
 
-**GitHub(Frontend): https://github.com/Leegijun11/dearbaby-ai-fe** <br>
-**GitHub(Backend/Infra): https://github.com/Leegijun11/k8s_backend_final** <br>
-**회고: https://myblog73329.tistory.com/104**
+**핵심 구현**
+- LangGraph 기반 RAG 챗봇: 배정 조회 → ChromaDB 검색(배정된 문서 범위로 제한) → 판단·생성 → 로그 저장. "검색된 내용에 답이 실제로 있는지"를 LLM이 함께 판단해 없으면 지어내지 않고 정직하게 거절. 거리 임계값 대신 LLM 판단을 택한 근거는 실측(정답 청크 거리 1.46 > 무관한 질문 1.42)
+- 적응도 리포트: 신입의 자가 체크(완료)를 질문 기록과 교차해 "완료 후에도 같은 업무를 계속 묻는 항목" 등 4개 신호를 **서버가 계산**하고, LLM은 사수용 요약만 작성하도록 분리. 업무별 질문 12건을 "12명이 긍정 반응"으로 잘못 서술하는 오해석을 재현해 신호별 해석 가이드를 프롬프트에 추가
+- 비용·트래픽 방어: 사용자별+IP별 rate limit, LLM 호출 `max_tokens` 상한, 부하 테스트로 DB 커넥션 풀 병목(기본 15) 확인 후 40으로 조정, 이벤트 루프를 막던 `async` 업로드 API 수정
+- 보안: 다른 사수가 남의 신입 리포트·챗로그를 조회할 수 있는 결함을 직접 재현해 수정하고 통합 테스트로 회귀 방지
+- 테스트: 단위 55개(LLM·ChromaDB mock) + 통합 18개(실제 MySQL). 통합 테스트용 별도 DB는 프로젝트 규모상 불필요하다고 판단해 도입하지 않음
+
+**GitHub: https://github.com/Leegijun11/Handover_rag** <br>
 
 **Tech**<br>
-BE: <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+AI/RAG: <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white"> <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logoColor=white">
 <br>
-DB: <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+BE: <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 <br>
-Infra/CI-CD: <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"> <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"> <img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white">
+FE: <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+<br>
+Test: <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white">
 
 <hr>
 
@@ -127,33 +133,26 @@ AI/Agent: <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-bad
 
 <hr>
 
-### LLM 기반 QA 데이터 증강 (2026.05.02 ~ 2026.05.21)
+### 아이 성장 일기 AI (2026.06.10 ~ 2026.08.04)
 
-**개인 프로젝트 | GPT3Mix 논문(분류 태스크 증강)의 아이디어를 QA 태스크에 응용해, 동일 context에서 다양한 표현의 질문을 GPT-3.5로 생성하여 T5 모델의 정답 예측 성능 개선을 검증한 프로젝트입니다.** KorQuAD 1.0 기반 학습 데이터를 3,000개에서 9,000개로 증강한 결과 EM 10.6→26.2, F1 14.3→32.3으로 향상되었고, 오답 사례 분석을 통해 예측 길이가 정답보다 긴 경향을 발견해 추가 튜닝을 시도했습니다.
+**프로젝트 한 줄 소개: AI가 아이의 성장 과정을 분석·기록하여 생일마다 "디지털 성장 일기(북)"을 자동 생성해주는 육아 기록 서비스입니다.**
 
-**GitHub: https://github.com/Leegijun11/QA-Augmentation** <br>
+🏆 IBM x RedHat AX Academy 최종 프로젝트 최우수상
 
-**Tech**<br>
-<img src="https://img.shields.io/badge/T5-FF6F00?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black">
+**담당 역할 (팀장)**
+- 프로젝트 주제 선정 및 기획 추진
+- 프론트엔드 아키텍처 설계 및 개발
+- 백엔드-프론트엔드 연결 최종 점검 및 트러블슈팅
+- CI/CD·K8s 기반 배포 인프라 구축
 
-<hr>
-
-### EuroSAT 위성 이미지 분류 모델 비교 (2026.06.01 ~ 2026.06.07)
-
-**개인 프로젝트 | 위성 이미지 데이터셋 EuroSAT에서 CNN, Vision Transformer(ViT), MLP-Mixer 세 아키텍처의 분류 성능을 비교한 프로젝트입니다.** 동일 데이터·조건에서 실험한 결과 MLP-Mixer > ViT > CNN 순으로 정확도가 높게 나타났고, 이를 근거로 각 아키텍처가 전역/지역 특징을 다루는 방식의 차이를 분석했습니다.
-
-**GitHub: https://github.com/Leegijun11/eurosat-cnn-vit-mlp** <br>
-
-**Tech**<br>
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white">
-
-<hr>
-
-### 개발자 번아웃 예측 모델 (2026.05.16 ~ 2026.06.01)
-
-**개인 프로젝트 | 개발자의 업무·생활 습관 데이터를 바탕으로 번아웃 지수(Low/Medium/High)를 예측하는 딥러닝 모델입니다.** 정규화·결측치 처리 방식을 비교 실험하고 SMOTE·파생 변수로 성능 개선을 시도했으며, 최종 정확도(75~80%)의 정체 원인을 혼동 행렬 분석을 통해 모델이 아닌 데이터셋 자체의 한계로 진단했습니다.
-
-**GitHub: https://github.com/Leegijun11/Burnout-Optimization-Lab** <br>
+**GitHub(Frontend): https://github.com/Leegijun11/dearbaby-ai-fe** <br>
+**GitHub(Backend/Infra): https://github.com/Leegijun11/k8s_backend_final** <br>
+**회고: https://myblog73329.tistory.com/104**
 
 **Tech**<br>
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"> <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white">
+BE: <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white">
+<br>
+DB: <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<br>
+Infra/CI-CD: <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"> <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"> <img src="https://img.shields.io/badge/ArgoCD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white">
+
