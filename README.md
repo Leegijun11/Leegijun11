@@ -62,7 +62,7 @@ AI 기능(LLM, RAG)을 실제 서비스로 설계하고 배포하는 백엔드 �
 
 🚀 Featured Projects<br /><br />
 
-### HANDOVER — 인수인계 업무보조 챗봇 + 신입 적응도 리포트 (2026.08.31 ~ 2026.09.20)
+### HANDOVER — 인수인계 업무보조 챗봇 + 신입 적응도 리포트
 
 **팀 프로젝트(3인, 팀장) | 인수인계서를 근거로 답하는 RAG 챗봇으로 신입의 반복 질문을 줄이고, 체크리스트 완료를 질문 기록과 교차 검증해 사수에게 신입의 적응도 리포트를 제공하는 서비스입니다.**
 
@@ -91,7 +91,7 @@ Test: <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&l
 
 <hr>
 
-### 스미싱 문자 판별 및 대처 가이드 (2026.07.29 ~ 2026.08.17)
+### 스미싱 문자 판별 및 대처 가이드
 
 **개인 프로젝트 | BERT로 스미싱 문자 유형을 분류하고, RAG로 검색한 유형별 공식 대처방법을 바탕으로 LLM이 위험도와 행동 가이드를 안내하는 서비스입니다.**
 
@@ -112,15 +112,17 @@ Validation: <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the
 
 <hr>
 
-### 자취생 요리 추천 (2026.08.18 ~ 2026.08.30)
+### 자취생 요리 추천
 
-**개인 프로젝트 | 집에 있는 재료·조리도구와 원하는 요리 종류만 고르면, AI가 만들 수 있는 메뉴를 골라 레시피를 생성하고 스스로 평가까지 해주는 LLM + Multi-Agent 서비스입니다.**
+**개인 프로젝트 | 집에 있는 재료·조리도구와 원하는 요리 종류만 고르면, AI가 만들 수 있는 메뉴를 골라 레시피를 생성하고 스스로 평가까지 해주는 LLM + Multi-Agent + RAG 서비스입니다.**
 
 **핵심 구현**
 - 생성 에이전트(요리사)와 평가 에이전트(미식가)를 분리한 Multi-Agent 구조로 LangGraph 기반 State 관리 및 조건부 재생성 사이클 구현
-- 보유 재료·조리도구와 카테고리에 맞는 레시피 후보를 코드로 매칭하고, 부족한 재료는 대체재 테이블로 인정하는 로직 설계
+- 카테고리 선택 외에 자연어 문장으로도 레시피를 검색할 수 있도록 RAG 파이프라인 구축: ChromaDB 벡터 검색에 카테고리 메타데이터 필터링을 결합한 하이브리드 검색 후, 후보들을 LLM이 실제 설명을 읽고 재랭킹
+- 고정 평가셋(자연어 쿼리 12개) + Hit@K·MRR 자동 평가 스크립트를 만들어 임베딩 모델 교체, 재랭킹 도입 등 검색 품질 개선을 수치로 검증 (재랭킹 적용 후 Hit@1 58%→83%, MRR 0.683→0.875)
+- 보유 재료·조리도구와 카테고리/검색 결과에 맞는 레시피 후보를 코드로 매칭하고, 부족한 재료는 대체재 테이블로 인정하는 로직 설계
 - 생성된 레시피에 대체재·필수 재료·맵기/굽기 반영 여부를 문자열 검증으로 직접 확인 후 재시도 여부 판단 (미식가 에이전트의 자체 판단에만 의존하지 않도록 설계)
-- LLM에게 맡길 판단(레시피 생성·평가)과 코드로 처리할 로직(재고 대조, 조건 분기, 검증)을 명확히 분리
+- LLM에게 맡길 판단(레시피 생성·평가·검색 재랭킹)과 코드로 처리할 로직(재고 대조, 조건 분기, 검증, 평가 지표 계산)을 명확히 분리
 
 **GitHub: https://github.com/Leegijun11/home_cook** <br>
 
@@ -129,11 +131,11 @@ BE: <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&lo
 <br>
 FE: <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white">
 <br>
-AI/Agent: <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white">
+AI/RAG: <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langgraph&logoColor=white"> <img src="https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logoColor=white">
 
 <hr>
 
-### 아이 성장 일기 AI (2026.06.10 ~ 2026.08.04)
+### 아이 성장 일기 AI
 
 **프로젝트 한 줄 소개: AI가 아이의 성장 과정을 분석·기록하여 생일마다 "디지털 성장 일기(북)"을 자동 생성해주는 육아 기록 서비스입니다.**
 
