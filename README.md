@@ -144,7 +144,7 @@ AI/RAG: <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge
 
 **담당 역할 (팀장)**
 - 프로젝트 주제 선정 및 기획 추진
-- 프론트엔드 아키텍처 설계 및 개발
+- 프론트엔드 아키텍처 설계
 - 백엔드-프론트엔드 연결 최종 점검 및 트러블슈팅
 - CI/CD·K8s 기반 배포 인프라 구축
 
