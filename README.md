@@ -142,11 +142,11 @@ AI/RAG: <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge
 
 🏆 IBM x RedHat AX Academy 최종 프로젝트 최우수상
 
-**담당 역할 (팀장)**
+**담당 역할 (팀장, 개발보다 기획과 점검 중심)**
 - 프로젝트 주제 선정 및 기획 추진
-- 프론트엔드 아키텍처 설계
-- 백엔드-프론트엔드 연결 최종 점검 및 트러블슈팅
-- CI/CD·K8s 기반 배포 인프라 구축
+- 프론트엔드 폴더 구조 설계: 기능을 pages / components / services 등으로 나눠 최종 점검 때 확인하기 쉽게 구성
+- 백엔드-프론트엔드 API 연동 점검: 요청 값 구조 불일치, 수정본 합친 뒤 깨진 API 등을 확인하고 수정 (수동 점검)
+- GitHub Actions → ECR → ArgoCD → EKS 배포 파이프라인(CI/CD) 구성 (Docker·쿠버네티스는 처음 접해 본 수준)
 
 **GitHub(Frontend): https://github.com/Leegijun11/dearbaby-ai-fe** <br>
 **GitHub(Backend/Infra): https://github.com/Leegijun11/k8s_backend_final** <br>
